@@ -1,0 +1,39 @@
+.App {
+  min-height: 100vh;
+  background-color: #F9F9F7;
+}
+
+.word-highlight {
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.word-highlight:hover {
+  background-color: rgba(67, 56, 202, 0.1);
+}
+
+.review-content {
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+.review-content p {
+  margin-bottom: 1rem;
+}
+
+.ai-suggestion-box {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
